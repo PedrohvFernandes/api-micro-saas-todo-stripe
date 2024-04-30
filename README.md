@@ -19,3 +19,8 @@
 - Prisma
 - Stripe
 - Typescript
+- Husky
+- Eslint
+- Prettier
+- Lint Staged
+- git commit msg linter
