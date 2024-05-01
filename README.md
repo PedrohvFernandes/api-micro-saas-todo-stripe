@@ -27,3 +27,7 @@
 - Prettier
 - Lint Staged
 - git commit msg linter
+
+### Fluxo do sistema
+
+<img src="./.github/fluxo-do-sistema.png" width="500" height="500">
