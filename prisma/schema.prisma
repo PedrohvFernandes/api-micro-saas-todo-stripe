@@ -18,7 +18,12 @@ model User {
   name  String
   email String @unique
 
-// Um usuario pode ter varias tarefas
+  // id do usuario do stripe
+  stripeCustomerId     String?
+  // Id do plano do usuario
+  stripeSubscriptionId String?
+
+  // Um usuario pode ter varias tarefas
   todos Todo[]
 
   createdAt DateTime @default(now())
@@ -31,7 +36,7 @@ model Todo {
   description String
   done        Boolean @default(false)
 
-// Essa tarefa em especifico pode ter um so id
+  // Essa tarefa em especifico pode ter um so id
   user   User   @relation(fields: [userId], references: [id])
   userId String
 
