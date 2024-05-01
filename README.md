@@ -30,4 +30,5 @@
 
 ### Fluxo do sistema
 
+- [Fluxo do sistema](https://excalidraw.com/#json=zMZvG63BX4r7YUcLeZ4qY,RNRGBuhKwQvYd1pml92hJg)
 <img src="./.github/fluxo-do-sistema.png" width="500" height="500">
