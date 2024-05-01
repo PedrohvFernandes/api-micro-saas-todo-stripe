@@ -1,1 +1,26 @@
-GET http://localhost:3000 HTTP/1.1
+GET http://localhost:3000/users HTTP/1.1
+
+###
+
+GET http://localhost:3000/users/4871ab60-0cba-44a2-a196-7c0c462aca41 HTTP/1.1
+
+###
+
+POST http://localhost:3000/users HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "john@gmail.com"
+}
+
+###
+
+POST http://localhost:3000/todos HTTP/1.1
+Content-Type: application/json
+x-user-id: 4871ab60-0cba-44a2-a196-7c0c462aca41
+
+{
+  "title": "Minha segunda tarefa",
+  "description": "Essa é a descrição da minha primeira tarefa"
+}

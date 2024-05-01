@@ -7,7 +7,8 @@
     "lint:vite": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "lint:my": "eslint . --max-warnings 0",
     "lint:fix": "eslint . --fix",
-    "lint:mysrc": "eslint ./src --max-warnings 0"
+    "lint:mysrc": "eslint ./src --max-warnings 0",
+    "dev": "bun --watch src/index.ts"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"

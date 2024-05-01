@@ -1,10 +1,30 @@
+import { createTodoController } from './controllers/todo.controller'
+import {
+  createUserController,
+  findOneUserController,
+  listUsersController
+} from './controllers/user.controller'
+
 import express from 'express'
 
 const app = express()
 const port = 3000
 
-app.get('/', (req, res) => {
-  res.send('Hello World!')
+// Um middleware que transforma o corpo da requisição em JSON
+app.use(express.json())
+
+app.get('/users', (req, res) => {
+  listUsersController(req, res)
+})
+app.post('/users', (req, res) => {
+  createUserController(req, res)
+})
+app.get('/users/:userId', (req, res) => {
+  findOneUserController(req, res)
+})
+
+app.post('/todos', (req, res) => {
+  createTodoController(req, res)
 })
 
 app.listen(port, () => {

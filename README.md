@@ -9,6 +9,7 @@
  - Como instalar o bun.js ?
   - `npm install -g bun`
 - [Docs bun](https://bun.sh/docs/installation)
+- Stripe é o maior gateway de pagamento do mundo, e é uma ferramenta que permite você receber pagamentos online. Aceitando mais de 135 moedas. E a integração dele é simplesmente fácil de fazer.
 
  ### Tecnologias:
 
