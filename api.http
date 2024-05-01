@@ -24,3 +24,8 @@ x-user-id: 4871ab60-0cba-44a2-a196-7c0c462aca41
   "title": "Minha segunda tarefa",
   "description": "Essa é a descrição da minha primeira tarefa"
 }
+
+###
+
+POST http://localhost:3000/checkout HTTP/1.1
+x-user-id: 4871ab60-0cba-44a2-a196-7c0c462aca41

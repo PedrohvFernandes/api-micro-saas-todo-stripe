@@ -1,3 +1,4 @@
+import { createCheckoutController } from './controllers/checkout.controller'
 import { createTodoController } from './controllers/todo.controller'
 import {
   createUserController,
@@ -25,6 +26,10 @@ app.get('/users/:userId', (req, res) => {
 
 app.post('/todos', (req, res) => {
   createTodoController(req, res)
+})
+
+app.post('/checkout', (req, res) => {
+  createCheckoutController(req, res)
 })
 
 app.listen(port, () => {
