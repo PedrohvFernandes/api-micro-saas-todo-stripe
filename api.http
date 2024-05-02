@@ -10,22 +10,22 @@ POST http://localhost:3000/users HTTP/1.1
 Content-Type: application/json
 
 {
-  "name": "Ricardão",
-  "email": "ricardo@gmail.com"
+  "name": "Paulo",
+  "email": "paulo@gmail.com"
 }
 
 ###
 
 POST http://localhost:3000/todos HTTP/1.1
 Content-Type: application/json
-x-user-id: 4871ab60-0cba-44a2-a196-7c0c462aca41
+x-user-id: fe98a842-b64f-4405-a3ff-a5cd7a80f80f
 
 {
-  "title": "Minha segunda tarefa",
-  "description": "Essa é a descrição da minha primeira tarefa"
+  "title": "Minha setima tarefa",
+  "description": "Essa é a descrição da minha setima tarefa"
 }
 
 ###
 
 POST http://localhost:3000/checkout HTTP/1.1
-x-user-id: 4f2a2db4-abbe-4135-91ae-b2e53933baa5
+x-user-id: fe98a842-b64f-4405-a3ff-a5cd7a80f80f
