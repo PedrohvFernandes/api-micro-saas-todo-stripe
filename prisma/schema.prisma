@@ -19,9 +19,11 @@ model User {
   email String @unique
 
   // id do usuario do stripe
-  stripeCustomerId     String?
+  stripeCustomerId         String?
   // Id do plano do usuario
-  stripeSubscriptionId String?
+  stripeSubscriptionId     String?
+  // Se esta parado, ativo... o status do plano dele
+  stripeSubscriptionStatus String?
 
   // Um usuario pode ter varias tarefas
   todos Todo[]
