@@ -1,4 +1,5 @@
 import { prisma } from '../lib/prisma'
+import { createStripeCustomer } from '../lib/stripe'
 
 import type { Request, Response } from 'express'
 
@@ -44,10 +45,18 @@ export const createUserController = async (req: Request, res: Response) => {
     return res.status(400).send({ message: 'Email already exists' })
   }
 
+  // Ja cria o usuario no stripe
+  const stripeCustomer = await createStripeCustomer({
+    email,
+    name
+  })
+
   const user = await prisma.user.create({
     data: {
       name,
-      email
+      email,
+      // Salva o id do stripe do usuario no nosso bd, mesmo que o usuario nao tenha um plano ainda
+      stripeCustomerId: stripeCustomer.id
     }
   })
 

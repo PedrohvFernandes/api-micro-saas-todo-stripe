@@ -20,7 +20,7 @@ export const createCheckoutController = async (req: Request, res: Response) => {
     return res.status(401).send({ message: 'Not authorized' })
   }
 
-  const checkout = await createCheckoutSession(user.id)
+  const checkout = await createCheckoutSession(user.id, user.email)
 
   return res.status(201).send(checkout)
 }
