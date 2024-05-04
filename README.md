@@ -41,4 +41,11 @@
 ### Fluxo do sistema
 
 - [Fluxo do sistema](https://excalidraw.com/#json=zMZvG63BX4r7YUcLeZ4qY,RNRGBuhKwQvYd1pml92hJg)
-<img src="./.github/fluxo-do-sistema.png" width="500" height="500">
+<img src="./.github/fluxo-do-sistema.png">
+
+## 👨‍💻 Autor:
+
+- Linkedin: https://www.linkedin.com/in/pedro-henrique-vieira-fernandes
+- Git: https://github.com/PedrohvFernandes
+- Instagram: pedro17fernandes
+- portfolio: https://pedrohvfernandes-web-page-portfolio.vercel.app
